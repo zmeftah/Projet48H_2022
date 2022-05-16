@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 
+/* a random font form google fonts to fill */
 * {
     font-family: "JetBrains Mono";
 }
+
+/* creating variables like colors and other stuff */
 :root{
     --white: #EFEFEF;
     --orange: #F66B0E;
     --blue: #205375;
     --bluef : #112B3C;
 }
+
+/* 
+  _    _                _           
+ | |  | |              | |          
+ | |__| | ___  __ _  __| | ___ _ __ 
+ |  __  |/ _ \/ _` |/ _` |/ _ \ '__|
+ | |  | |  __/ (_| | (_| |  __/ |   
+ |_|  |_|\___|\__,_|\__,_|\___|_|   
+                                    
+                                    
+*/
+
+/* setting a background color for header and footer  */
 #mainHeader, #mainFooter {
     background-color: var(--blue);
 }
 
+/* styling the header which contains the logo , serach bar , nav Bar */
 #mainHeader {
     width : 100%;
     height : 60px;
@@ -22,26 +39,20 @@
     display: grid;
     grid-template-columns: 200px 1fr 500px;
 }
+
+/* styling the logo */
 #mainLogo {
     width: 160px;
     margin: 10px;
     position: relative;
     z-index: 1000;
 }
+
+/* styling the Nav bar which leads to 4 pages : Acceuil , Sign in , Events , Contact */
 #mainNav {
     background-color: transparent;
 }
-#mainNav a {
-    color: var(--orange);
-    text-decoration: none;
-    /* font-family: Raleway; */
-    font-size: 1.3em;
-    /* display: none; */
-}
-#mainNav a:hover {
-    color: var(--bluef);
-}
-
+/* removing tags from list items and setting the display */
 #mainNav ul {
     height: 60px;
     list-style: none;
@@ -52,16 +63,47 @@
     justify-content: center;
     align-items: center;
 }
+/* The space between the list items */
 #mainNav > ul > li {
     padding: 0px 20px;
 }
 
+/* styling nav bar links */
+#mainNav a {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+/* a little animation when we hover list items */
+#mainNav a:hover {
+    color: var(--bluef);
+}
 
+
+
+
+
+
+/* 
+                  _         _____                 
+                 (_)       |  __ \                
+  _ __ ___   __ _ _ _ __   | |__) |_ _  __ _  ___ 
+ | '_ ` _ \ / _` | | '_ \  |  ___/ _` |/ _` |/ _ \
+ | | | | | | (_| | | | | | | |  | (_| | (_| |  __/
+ |_| |_| |_|\__,_|_|_| |_| |_|   \__,_|\__, |\___|
+                                        __/ |     
+                                       |___/      
+*/
 #mainPage {
-    display: flex;
+    padding: 100px 20px;
     min-height:100vh;
 }
-/* #mainPage.contact form{
+#mainPage h1{
+    font-size: 1.8em;
+    color: var(--red);
+    letter-spacing: .1em;
+}
+#mainPage.contact form{
     border-top: solid 1px var(--red);
     display: grid;
 }
@@ -80,18 +122,32 @@
 }
 #mainPage.contact form button{
     padding: 10px;
-    background-color: var(--red);
+    background-color: var(--orange);
     color: var(--white);
     border: none;
     margin-top: 30px;
 }
 #mainPage.contact form button:hover{
-    background-color: var(--shaded-red);
+    background-color: var(--blue);
 }
 #mainPage.contact form button:active{
-    background-color: var(--red);
-} */
+    background-color: var(--bluef);
+}
 
+
+
+
+
+/* 
+   __            _            
+  / _|          | |           
+ | |_ ___   ___ | |_ ___ _ __ 
+ |  _/ _ \ / _ \| __/ _ \ '__|
+ | || (_) | (_) | ||  __/ |   
+ |_| \___/ \___/ \__\___|_|   
+                              
+                              
+*/
 #mainFooter {
     height: 40px;
     width: 100%;
