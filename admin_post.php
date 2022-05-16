@@ -1,5 +1,5 @@
 <?php
-include_once "/inc/header.php";
+include_once "inc\header.php";
 $bdd = $conn;
 global $bdd;
 $posts = $bdd->query("SELECT id, titre FROM events ORDER BY id DESC");
@@ -20,7 +20,7 @@ return $posts;
 </head>
 
 <body>
-    <?php include "header.php" ?>
+    <?php include "inc\header.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">

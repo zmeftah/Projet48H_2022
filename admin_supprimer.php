@@ -1,16 +1,15 @@
 <?php
-include_once "inc/header.php";
-$bdd = $conn;
+include_once "inc\header.php";
 global $bdd;
 $id = (int)$_GET["id"];
 
-$image = $bdd->prepare("SELECT image FROM articles WHERE id = ?");
-$image->execute([$id]);
-$image = $image->fetch()["image"];
+$photo = $bdd->prepare("SELECT photo FROM events WHERE id = ?");
+$photo->execute([$id]);
+$photo = $photo->fetch()["photo"];
 
-unlink('../img/' . $image);
+unlink($photo);
 
-$supprimer = $bdd->prepare("DELETE FROM articles WHERE id = ?");
+$supprimer = $bdd->prepare("DELETE FROM events WHERE id = ?");
 $supprimer->execute([$id]);
 
-header("Location: admin_post.php");
+header("Location: dashboard.php");

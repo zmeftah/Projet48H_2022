@@ -1,5 +1,5 @@
 <?php
-include_once "inc/header.php";
+include_once "inc\header.php";
 $bdd = $conn;
 global $bdd;
 
@@ -65,7 +65,7 @@ return $erreur;
                 ?>
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="message confirmation">Votre article a bien été modifié !</div>
+                            <div class="message confirmation">Votre événement à bien été modifié !</div>
                         </div>
                     </div>
             <?php
