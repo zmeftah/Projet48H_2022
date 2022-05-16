@@ -8,13 +8,12 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title> Accueil </title>
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../scriptAssets/app.js"></script>
 </head>
-<body>
+
   <header id="mainHeader">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -71,9 +70,9 @@ session_start();
               <a class="nav-link disabled">Disabled</a>
             </li> -->
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex" role="search" action ="searchbar.php" method = "get">
+            <input class="form-control me-2" type="search" name = "terme" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success"  name = "recherche" value = "Rechercher" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -116,7 +115,7 @@ session_start();
 
 
 
-</head>
+
 
 
 <body>
