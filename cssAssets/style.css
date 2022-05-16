@@ -24,65 +24,6 @@
                                     
 */
 
-/* setting a background color for header and footer  */
-#mainHeader, #mainFooter {
-    background-color: var(--blue);
-}
-
-/* styling the header which contains the logo , serach bar , nav Bar */
-#mainHeader {
-    width : 100%;
-    height : 60px;
-    color: var(--orange);
-    position: fixed;
-    top: 0;
-    display: grid;
-    grid-template-columns: 200px 1fr 500px;
-}
-
-/* styling the logo */
-#mainLogo {
-    width: 160px;
-    margin: 10px;
-    position: relative;
-    z-index: 1000;
-}
-
-/* styling the Nav bar which leads to 4 pages : Acceuil , Sign in , Events , Contact */
-#mainNav {
-    background-color: transparent;
-}
-/* removing tags from list items and setting the display */
-#mainNav ul {
-    height: 60px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-/* The space between the list items */
-#mainNav > ul > li {
-    padding: 0px 20px;
-}
-
-/* styling nav bar links */
-#mainNav a {
-    color: var(--orange);
-    text-decoration: none;
-    font-size: 1.3em;
-}
-/* a little animation when we hover list items */
-#mainNav a:hover {
-    color: var(--bluef);
-}
-
-
-
-
-
 
 /* 
                   _         _____                 
@@ -165,23 +106,7 @@
     align-items: center;
 }
 /* MAIN */
+.h1 {
+    background-image: url("../ressources/photodesport.png");
 
-.card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
-  
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    text-align: center;
-  }
-  .card-image {
-    grid-area: image;
-    background: url("ressources/photodesport.png");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-  }
+}
