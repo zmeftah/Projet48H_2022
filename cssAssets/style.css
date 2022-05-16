@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+* {
+    font-family: "JetBrains Mono";
+}
+:root{
+    --white: #EFEFEF;
+    --orange: #F66B0E;
+    --blue: #205375;
+    --bluef : #112B3C;
+}
+#mainHeader, #mainFooter {
+    background-color: var(--blue);
+}
+
+#mainHeader {
+    width : 100%;
+    height : 60px;
+    color: var(--orange);
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr 500px;
+}
+#mainLogo {
+    width: 160px;
+    margin: 10px;
+    position: relative;
+    z-index: 1000;
+}
+#mainNav {
+    background-color: transparent;
+}
+#mainNav a {
+    color: var(--orange);
+    text-decoration: none;
+    /* font-family: Raleway; */
+    font-size: 1.3em;
+    /* display: none; */
+}
+#mainNav a:hover {
+    color: var(--bluef);
+}
+
+#mainNav ul {
+    height: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#mainNav > ul > li {
+    padding: 0px 20px;
+}
+
+
+#mainPage {
+    display: flex;
+    min-height:100vh;
+}
+/* #mainPage.contact form{
+    border-top: solid 1px var(--red);
+    display: grid;
+}
+#mainPage.contact form > div > div {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#mainPage.contact form label{
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+#mainPage.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+#mainPage.contact form button{
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 30px;
+}
+#mainPage.contact form button:hover{
+    background-color: var(--shaded-red);
+}
+#mainPage.contact form button:active{
+    background-color: var(--red);
+} */
+
+#mainFooter {
+    height: 40px;
+    width: 100%;
+    position:fixed;
+    /* font-family: 'Bree Serif'; */
+    bottom: 0; 
+    color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MAIN */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    margin: 30px;
+    background: rgba(22, 105, 239, 0.874);
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    box-shadow: 0 15 px 0 #fff,
+    inset 0 -15px 0 rgba(255,255,255,0.25),
+    0 45px 0 rgba(0,0,015);
+    overflow: hidden;
+}

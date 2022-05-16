@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Accueil </title>
+    <link rel="stylesheet" href="../cssAssets/normalize.css">
+    <link rel="stylesheet" href="../cssAssets/style.css">
+    <script type="module" src="../scriptAssets/app.js"></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="../ressources/logo.png" alt="logoYnov" id="mainLogo">
+        <h2>here will be the search bar</h2>
+        <nav id="mainNav">
+            <ul>
+                <li> <a href="./index.html"> Accueil </a></li>
+                <li> <a href="./signIn.html"> Sign in </a></li>
+                <li> <a href="./events.html"> Events </a></li>
+                <li> <a href="./contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainPage" class="contact">
+            <!-- <h1>Contactez-nous</h1> -->
+            <!-- <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p> -->
+            <form id="frmContact" action="merci.html">
+                <div>
+                    <div>
+                        <label for="fName">Prénom</label>
+                        <input name="fName" id="fName" required autofocus />
+                    </div>
+                    <div>
+                        <label for="lName">Nom de famille</label>
+                        <input type="text" name="lName" id="lName" required />
+                    </div>
+                    <div>
+                        <label for="email">Votre e-mail</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+    </main>
+    <footer id="mainFooter" > 
+        Groupe 20 Paris Ynov Campus - All rights reservred - &copy; 2022
+    </footer>
+</body>
+</html>
