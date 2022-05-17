@@ -1,15 +1,15 @@
 <?php
 include_once "inc\header.php";
-global $bdd;
-$id = (int)$_GET["id"];
+if (!empty($_GET)) {
+    $pdo->query("DELETE FROM events WHERE id= " . $_GET['id'] );
 
-$photo = $bdd->prepare("SELECT photo FROM events WHERE id = ?");
-$photo->execute([$id]);
-$photo = $photo->fetch()["photo"];
+    header('Location: dashboard.php?supp=true');
 
-unlink($photo);
+}
 
-$supprimer = $bdd->prepare("DELETE FROM events WHERE id = ?");
-$supprimer->execute([$id]);
+if (!empty($_GET)) {
+    $pdo->query("DELETE FROM users WHERE id= " . $_GET['id'] );
 
-header("Location: dashboard.php");
+    header('Location: admin_list_user.php?supp=true');
+
+}
