@@ -2,7 +2,7 @@
 
 include "inc\header.php";
 $result2 = $pdo->query("SELECT * FROM events ") ?>
-?>
+
 
 <head>
     <meta charset="utf-8">
@@ -14,24 +14,24 @@ $result2 = $pdo->query("SELECT * FROM events ") ?>
 </head>
 
 <body>
+<h3>Panel ADMIN</h3>
+<ul>
+<li><a href="admin_list_categories.php">Catégories</li>
+<li><a href="admin_list_tags.php">Tags</li>
+<li><a href="admin_list_users.php">Users</li>
+</ul>
 <div class="row">
-    <?php while ($photo2 = $result2->fetch(PDO::FETCH_OBJ)) {
-    ?>
+    <?php while ($photo2 = $result2->fetch(PDO::FETCH_OBJ)) {?>
+    
+        <tr>
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
             <a href="article.php?id=<?php echo $photo2->id ?>" class="fancybox" rel="ligthbox">
                 <img src="<?php echo $photo2->photo  ?>" class="zoom img-fluid" alt="">
                 <h3><?php echo $photo2->titre  ?></h3>
-                <?php
-                $request = mysqli_query($conn,$result2);
-                while ($row = mysqli_fetch_array($request))
-                {
-                ?>
-                <li><a href="admin_supprimer.php?id=<?= $row['id'] ?>">Supprimer</a></li>
-                <?php
-                }
-                ?>
+                <a href="admin_supprimer_events.php?id=<?php echo $photo2->id ?>" class="glyphicon glyphicon-remove"></a>
             </a>
         </div>
+        </tr>
     <?php
     }
 
