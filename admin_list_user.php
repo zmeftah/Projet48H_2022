@@ -23,7 +23,7 @@ $result = $pdo->query("SELECT * FROM users") ?>
 <?php while ($user = $result->fetch(PDO::FETCH_OBJ)) {?>
     <div class="col">
         <th><?php echo $user->email ?></th>
-        <a href="admin_supprimer.php?id=<?php echo $user->id ?>" class="glyphicon glyphicon-remove"></a>
+        <a href="admin_supprimer_users.php?id=<?php echo $user->id ?>" class="glyphicon glyphicon-remove"></a>
     </div>  
     </div>
                 

@@ -23,7 +23,7 @@ $result = $pdo->query("SELECT * FROM tags") ?>
 <?php while ($tag = $result->fetch(PDO::FETCH_OBJ)) {?>
     <div class="col">
         <th><?php echo $tag->nom ?></th>
-        <a href="admin_supprimer.php?id=<?php echo $tag->id ?>" class="glyphicon glyphicon-remove"></a>
+        <a href="admin_supprimer_tags.php?id=<?php echo $tag->id ?>" class="glyphicon glyphicon-remove"></a>
     </div>  
     </div>
                 

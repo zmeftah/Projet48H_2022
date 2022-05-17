@@ -22,7 +22,7 @@ $result2 = $pdo->query("SELECT * FROM events ") ?>
             <a href="article.php?id=<?php echo $photo2->id ?>" class="fancybox" rel="ligthbox">
                 <img src="<?php echo $photo2->photo  ?>" class="zoom img-fluid" alt="">
                 <h3><?php echo $photo2->titre  ?></h3>
-                <a href="admin_supprimer.php?id=<?php echo $photo2->id ?>" class="glyphicon glyphicon-remove"></a>
+                <a href="admin_supprimer_events.php?id=<?php echo $photo2->id ?>" class="glyphicon glyphicon-remove"></a>
             </a>
         </div>
         </tr>
