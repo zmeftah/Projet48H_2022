@@ -25,7 +25,7 @@
 
 
 
-        <a href="article.php?id=<?php echo $photo2->id ?>" class="fancybox" rel="ligthbox">
+        <a href="event.php?id=<?php echo $photo2->id ?>" class="fancybox" rel="ligthbox">
 
 
 

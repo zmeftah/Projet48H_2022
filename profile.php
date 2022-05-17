@@ -27,7 +27,7 @@ $profil = $result->fetch(PDO::FETCH_OBJ);
                                         
                                         <a href="modifphotos.php" class="btn btn-outline-primary">Modifier un event</a>
                                         <a href="suppphoto.php" class="btn btn-outline-danger">Supprimer un event</a>
-                                        <a href="admin.php" class="btn btn-outline-primary">Administration</a>
+                                        <a href="dashboard.php" class="btn btn-outline-primary">Administration</a>
                                         
                                         
 

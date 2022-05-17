@@ -13,9 +13,6 @@ if (isset($_REQUEST['nom'], $_REQUEST['prenom'],  $_REQUEST['email'], $_REQUEST[
     $prenom = mysqli_real_escape_string($conn, $prenom);
 
     
-    
-    
-    
 	// récupérer l'email et supprimer les antislashes ajoutés par le formulaire
 	$email = stripslashes($_REQUEST['email']);
     $email = mysqli_real_escape_string($conn, $email);
@@ -23,8 +20,6 @@ if (isset($_REQUEST['nom'], $_REQUEST['prenom'],  $_REQUEST['email'], $_REQUEST[
 	// récupérer le mot de passe et supprimer les antislashes ajoutés par le formulaire
 	$mdp = stripslashes($_REQUEST['mdp']);
     $mdp = mysqli_real_escape_string($conn, $mdp);
-
-    
 
 	//requéte SQL + mot de passe crypté
     $query = "INSERT into `users` (nom, prenom, email, mdp)

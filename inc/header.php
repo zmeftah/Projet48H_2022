@@ -32,6 +32,12 @@ session_start();
                     <li class="nav-item ">
                         <a class="nav-link" href="logout.php">Se déconnecter</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new_event.php">Ajouter un event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.php">Profil</a>
+                    </li>
 
                     
                     
@@ -47,15 +53,12 @@ session_start();
                     <li class="nav-item">
                         <a class="nav-link" href="signup.php">S'inscrire</a>
                     </li>
+                    
 
                 <?php } ?>
             
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile.php">Profil</a>
-            </li>
+            
+           
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
