@@ -24,7 +24,7 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
             </li>
             <?php if (isset($_SESSION['mail']) && !empty($_SESSION['mail'])) { ?>
 
@@ -50,10 +50,10 @@ session_start();
                 <?php } ?>
             
             <li class="nav-item">
-              <a class="nav-link" href="./events.html">Events</a>
+              <a class="nav-link" href="index.php">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link" href="profile.php">Profil</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
