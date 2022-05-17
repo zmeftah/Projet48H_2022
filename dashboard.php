@@ -14,6 +14,12 @@ $result2 = $pdo->query("SELECT * FROM events ") ?>
 </head>
 
 <body>
+<h3>Panel ADMIN</h3>
+<ul>
+<li><a href="admin_list_categories.php">Catégories</li>
+<li><a href="admin_list_tags.php">Tags</li>
+<li><a href="admin_list_users.php">Users</li>
+</ul>
 <div class="row">
     <?php while ($photo2 = $result2->fetch(PDO::FETCH_OBJ)) {?>
     
